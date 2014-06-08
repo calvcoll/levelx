@@ -21,13 +21,13 @@ object LevelX {
   @EventHandler
   def preInit (event: FMLPreInitializationEvent) {
     FMLLog.info("Pre-initialisation of " + this.name)
-    var registry = new LevelXRegistry
-    registry.init
   }
 
   @EventHandler
   def init (event: FMLInitializationEvent) {
     FMLLog.info("Initialised " + this.name)
+    var registry = new LevelXRegistry
+    registry.init
   }
 
   @EventHandler

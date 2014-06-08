@@ -18,16 +18,16 @@ object LevelX {
 
   @EventHandler
   def preInit (event: FMLPreInitializationEvent) {
-    FMLLog.info("Pre-initialisation of ")
+    FMLLog.info("Pre-initialisation of " + this.name)
   }
 
   @EventHandler
   def init (event: FMLInitializationEvent) {
-    FMLLog.info("Initialised LevelX")
+    FMLLog.info("Initialised " + this.name)
   }
 
   @EventHandler
   def postInit (event: FMLPostInitializationEvent) {
-    FMLLog.info("Post-initialisation of LevelX")
+    FMLLog.info("Post-initialisation of " + this.name)
   }
 }

@@ -3,7 +3,6 @@ package com.calv.levelx
 import cpw.mods.fml.common.{FMLLog, Mod}
 import cpw.mods.fml.common.Mod.EventHandler
 import cpw.mods.fml.common.event.{FMLPostInitializationEvent, FMLPreInitializationEvent, FMLInitializationEvent}
-import java.util.logging.{LogRecord, Logger}
 
 /**
  * Created by Calv on 08/06/14.

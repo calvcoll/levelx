@@ -3,3 +3,9 @@ out
 .gradle
 build
 mc-build
+assets
+
+#idea stuff
+levelx.iml
+levelx.ipr
+levelx.iws

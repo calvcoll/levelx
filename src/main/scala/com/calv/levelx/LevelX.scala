@@ -3,6 +3,8 @@ package com.calv.levelx
 import cpw.mods.fml.common.{FMLLog, Mod}
 import cpw.mods.fml.common.Mod.EventHandler
 import cpw.mods.fml.common.event.{FMLPostInitializationEvent, FMLPreInitializationEvent, FMLInitializationEvent}
+import net.minecraft.creativetab.CreativeTabs
+import net.minecraft.item.{ItemStack, Item}
 
 /**
  * Created by Calv on 08/06/14.
@@ -12,12 +14,15 @@ import cpw.mods.fml.common.event.{FMLPostInitializationEvent, FMLPreInitializati
 object LevelX {
   final val name = "LevelX"
   final val modid = "LevelX"
+  final val modRegisterName = "levelx"
   final val version = "0.0.0"
   final val modLanguage = "scala"
 
   @EventHandler
   def preInit (event: FMLPreInitializationEvent) {
     FMLLog.info("Pre-initialisation of " + this.name)
+    var registry = new LevelXRegistry
+    registry.init
   }
 
   @EventHandler

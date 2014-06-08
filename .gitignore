@@ -1,8 +1,8 @@
-eclipse
-out
-.gradle
-build
-mc-build
+eclipse/
+out/
+.gradle/
+build/
+mcbuild/
 assets
 
 #idea stuff

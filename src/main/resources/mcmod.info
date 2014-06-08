@@ -1,0 +1,16 @@
+[
+{
+  "modid": "levelx",
+  "name": "LevelX",
+  "description": "A mod to level items!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://github.com/calvcoll/levelX",
+  "updateUrl": "",
+  "authors": ["calvcoll"],
+  "credits": "Sethbling for the idea. (he designed a vanilla way)",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

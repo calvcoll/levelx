@@ -1,9 +1,9 @@
-eclipse/
-out/
-.gradle/
-build/
-mcbuild/
-assets
+/eclipse/
+/out/
+/.gradle/
+/build/
+/mcbuild/
+/assets
 
 #idea stuff
 levelx.iml

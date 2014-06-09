@@ -3,22 +3,19 @@ package com.calv.levelx
 import net.minecraft.item.{Item, ItemStack}
 import net.minecraft.creativetab.CreativeTabs
 import com.calv.levelx.blocks.BlockToolAltar
+import com.calv.levelx.tileentitys.TileEntityToolAltar
+import net.minecraft.block.Block
 
 /**
  * Created by calv on 08/06/14.
  */
 class LevelXRegistry {
   val modTab = new CreativeTabs(LevelX.modRegisterName){
-    override def getIconItemStack(): ItemStack = {
-      return new ItemStack(toolAltar)
-    }
-    override def getTabIconItem(): Item = {
-      return new Item()
-    }
+    override def getIconItemStack(): ItemStack = new ItemStack(Block.getBlockById(1))
+    override def getTabIconItem(): Item = new Item()
   }
-  val toolAltar = new BlockToolAltar
 
-  def init {
-    this.toolAltar.init(this.modTab)
-  }
+  val toolAltar = new BlockToolAltar
+  toolAltar.init(modTab)
+
 }

@@ -4,19 +4,24 @@ import net.minecraft.block.material.Material
 import net.minecraft.creativetab.CreativeTabs
 import net.minecraft.block.Block
 import cpw.mods.fml.common.registry.GameRegistry
-import net.minecraft.item.{Item, ItemStack}
+import net.minecraft.item.ItemStack
+import com.calv.levelx.tileentitys.TileEntityToolAltar
+import net.minecraft.world.World
 
 /**
  * Created by calv on 08/06/14.
  */
-class BlockToolAltar extends LevelXBlock(Material.rock){
+class BlockToolAltar extends LevelXBlockContainer(Material.rock){
   val blockName = "toolAltar"
 
-  def init(creativeTab :CreativeTabs) {
-    this.register(creativeTab)
+  override def createNewTileEntity(world :World, metadata :Int) = new TileEntityToolAltar
+
+  override def init(creativeTab :CreativeTabs) {
+    super.init(creativeTab)
     this.setHardness(2F)
     this.setStepSound(Block.soundTypeStone)
     this.setHarvestLevel("pickaxe", 10)
-    GameRegistry.addShapelessRecipe(new ItemStack(this),new ItemStack(Block.getBlockFromName("minecraft:stone")),new ItemStack(Block.getBlockFromName("minecraft:coalore")))
+    GameRegistry.addShapelessRecipe(new ItemStack(this),new ItemStack(Block.getBlockFromName("minecraft:stone")),
+                                                        new ItemStack(Block.getBlockFromName("minecraft:coalore")))
   }
 }

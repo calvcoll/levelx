@@ -5,6 +5,7 @@ import net.minecraft.creativetab.CreativeTabs
 import com.calv.levelx.blocks.BlockToolAltar
 import com.calv.levelx.tileentitys.TileEntityToolAltar
 import net.minecraft.block.Block
+import cpw.mods.fml.relauncher.{Side, SideOnly}
 
 /**
  * Created by calv on 08/06/14.

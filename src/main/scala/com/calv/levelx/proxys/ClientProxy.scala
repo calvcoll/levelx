@@ -9,6 +9,8 @@ import com.calv.levelx.tileentitys.TileEntityToolAltar
  */
 class ClientProxy extends CommonProxy{
 
+  this.registerTESR
+
   def registerTESR {
     ClientRegistry.bindTileEntitySpecialRenderer(classOf[TileEntityToolAltar], new RendererToolAltar)
   }

@@ -9,7 +9,7 @@ import cpw.mods.fml.common.registry.GameRegistry
  */
 class TileEntityToolAltar extends TileEntity {
 
-  GameRegistry.registerTileEntity(classOf[TileEntityToolAltar], "entityToolAltar")
+//  GameRegistry.registerTileEntity(classOf[TileEntityToolAltar], "entityToolAltar")
 
   override def writeToNBT(compound :NBTTagCompound) {
     super.writeToNBT(compound)

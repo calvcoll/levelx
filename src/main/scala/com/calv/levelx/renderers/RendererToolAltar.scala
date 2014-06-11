@@ -14,14 +14,13 @@ import cpw.mods.fml.common.FMLLog
  */
 class RendererToolAltar extends TileEntitySpecialRenderer{
 
-  private val toolAltar :IModelCustom = AdvancedModelLoader.loadModel(new ResourceLocation(LevelX.modid, "models/toolAltar.obj"))
-  private val altarTexture = new ResourceLocation(LevelX.modid, "models/toolAltar.png")
+  private val toolAltar :IModelCustom = AdvancedModelLoader.loadModel(new ResourceLocation(LevelX.modRegisterName, "models/toolAltar-small.obj"))
+  private val altarTexture = new ResourceLocation(LevelX.modRegisterName, "textures/models/toolAltar.png")
 
   def renderTileEntityAt(tileEntity :TileEntity, x :Double, y :Double, z :Double, f :Float) {
     GL11.glPushMatrix()
     GL11.glTranslated(x, y, z)
     Minecraft.getMinecraft.renderEngine.bindTexture(altarTexture)
-    FMLLog.getLogger.info("Rendering tile entity.")
     toolAltar.renderAll()
     GL11.glPopMatrix()
   }

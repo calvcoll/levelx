@@ -45,4 +45,5 @@ class RendererToolAltar extends TileEntitySpecialRenderer with ISimpleBlockRende
   override def shouldRender3DInInventory(modelId: Int): Boolean = true
 
   override def renderWorldBlock(world: IBlockAccess, x: Int, y: Int, z: Int, block: Block, modelId: Int, renderer: RenderBlocks): Boolean = false
+
 }

@@ -19,14 +19,20 @@ import net.minecraft.world.IBlockAccess
  */
 class RendererToolAltar extends TileEntitySpecialRenderer with ISimpleBlockRenderingHandler {
 
-  private val toolAltar :IModelCustom = AdvancedModelLoader.loadModel(new ResourceLocation(LevelX.modRegisterName, "models/toolAltar-small.obj"))
-  private val altarTexture = new ResourceLocation(LevelX.modRegisterName, "textures/models/toolAltar.png")
+  private val toolAltar :IModelCustom = AdvancedModelLoader.loadModel(new ResourceLocation(LevelX.modRegisterName, "models/toolAltar.obj"))
+  private val altarBottom = new ResourceLocation(LevelX.modRegisterName, "textures/models/toolAltar/toolAltarBottom.png")
+  private val altarPole = new ResourceLocation(LevelX.modRegisterName, "textures/models/toolAltar/toolAltarPole.png")
+  private val altarTop = new ResourceLocation(LevelX.modRegisterName, "textures/models/toolAltar/toolAltarTop.png")
 
   def renderTileEntityAt(tileEntity :TileEntity, x :Double, y :Double, z :Double, f :Float) {
     GL11.glPushMatrix()
     GL11.glTranslated(x, y, z)
-    Minecraft.getMinecraft.renderEngine.bindTexture(altarTexture)
-    toolAltar.renderAll()
+    Minecraft.getMinecraft.renderEngine.bindTexture(altarBottom)
+    toolAltar.renderPart("AltarBottom")
+    Minecraft.getMinecraft.renderEngine.bindTexture(altarPole)
+    toolAltar.renderPart("AltarPole")
+    Minecraft.getMinecraft.renderEngine.bindTexture(altarTop)
+    toolAltar.renderPart("AltarTop")
     GL11.glPopMatrix()
   }
 

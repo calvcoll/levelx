@@ -24,7 +24,7 @@ class BlockToolAltar extends LevelXBlockContainer(Material.rock){
     this.setHardness(2F)
     this.setStepSound(Block.soundTypeStone)
     this.setHarvestLevel("pickaxe", 10)
-    this.setBlockTextureName("toolAltar.png")
+//    this.setBlockTextureName("toolAltarBottom.png")
 
     GameRegistry.addShapelessRecipe(new ItemStack(this),new ItemStack(Block.getBlockFromName("minecraft:stone")),
                                                         new ItemStack(Block.getBlockFromName("minecraft:coalore")))

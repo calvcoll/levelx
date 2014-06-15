@@ -11,7 +11,7 @@ import net.minecraft.world.{IBlockAccess, World}
 /**
  * Created by calv on 08/06/14.
  */
-class BlockToolAltar extends LevelXBlockContainer(Material.rock){
+class BlockToolAltar() extends LevelXBlockContainer(Material.rock, null){
   val blockName = "toolAltar"
 
   override def createNewTileEntity(world :World, metadata :Int) = new TileEntityToolAltar
@@ -19,14 +19,13 @@ class BlockToolAltar extends LevelXBlockContainer(Material.rock){
   override def shouldSideBeRendered(blockAccess :IBlockAccess, i :Int, j:Int, k:Int, l:Int) = false
   override def isOpaqueCube() = false
 
-  override def init(creativeTab :CreativeTabs) {
-    super.init(creativeTab)
+  override def init = {
     this.setHardness(2F)
     this.setStepSound(Block.soundTypeStone)
     this.setHarvestLevel("pickaxe", 10)
-//    this.setBlockTextureName("toolAltarBottom.png")
-
     GameRegistry.addShapelessRecipe(new ItemStack(this),new ItemStack(Block.getBlockFromName("minecraft:stone")),
                                                         new ItemStack(Block.getBlockFromName("minecraft:coalore")))
+    this.setBlockName(this.blockName)
   }
+
 }

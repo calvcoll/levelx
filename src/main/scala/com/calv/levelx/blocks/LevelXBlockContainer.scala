@@ -9,14 +9,13 @@ import com.calv.levelx.LevelX
 /**
  * Created by calv on 08/06/14.
  */
-abstract class LevelXBlockContainer (blockType :Material) extends BlockContainer(blockType) {
+abstract class LevelXBlockContainer (blockType :Material, creativeTab :CreativeTabs) extends BlockContainer(blockType) {
   protected val blockName :String
 
-  def init(creativeTab :CreativeTabs) {
-    this.register(creativeTab)
+  def init = {
+    this.register
   }
-  def register(creativeTab :CreativeTabs) {
-    GameRegistry.registerBlock(this, this.blockName)
+  def register = {
     this.setCreativeTab(creativeTab)
     this.setBlockName(this.blockName)
   }

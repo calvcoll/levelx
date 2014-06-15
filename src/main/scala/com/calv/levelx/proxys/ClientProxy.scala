@@ -4,6 +4,12 @@ import cpw.mods.fml.client.registry.ClientRegistry
 import com.calv.levelx.renderers.RendererToolAltar
 import com.calv.levelx.tileentitys.TileEntityToolAltar
 import cpw.mods.fml.relauncher.{Side, SideOnly}
+import net.minecraftforge.client.MinecraftForgeClient
+import net.minecraft.item.{ItemStack, Item}
+import com.calv.levelx.{LevelXRegistry, LevelX}
+import net.minecraft.block.Block
+import net.minecraft.client.renderer.ItemRenderer
+import net.minecraftforge.client.IItemRenderer.ItemRenderType
 
 /**
  * Created by Calv on 08/06/14.

@@ -23,7 +23,7 @@ object LevelX {
 
   var registry = LevelXRegistry
 
-  @SidedProxy(clientSide="com.calv.levelx.proxys.ClientProxy", serverSide="com.calv.levelx.proxys.CommonProxy")
+  @SidedProxy(clientSide="com.calv.levelx.proxys.ClientProxy", serverSide="com.calv.levelx.proxys.ServerProxy")
   var proxy :CommonProxy = null
 
   @EventHandler

@@ -15,7 +15,7 @@ import com.calv.levelx.helpers.LevelXBlockToItemRenderer
 /**
  * Created by Calv on 08/06/14.
  */
-class ClientProxy extends CommonProxy{
+class ClientProxy extends CommonProxy {
 
   this.registerTESR
 

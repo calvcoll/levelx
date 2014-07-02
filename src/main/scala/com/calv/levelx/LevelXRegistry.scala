@@ -28,7 +28,6 @@ object LevelXRegistry {
 
   def register = {
     GameRegistry.registerBlock(toolAltar, toolAltar.blockName)
-    MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(this.toolAltar), new LevelXBlockToItemRenderer(new RendererToolAltar))
   }
 
 }

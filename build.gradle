@@ -23,7 +23,7 @@ group= "com.calv.levelx" // http://maven.apache.org/guides/mini/guide-naming-con
 archivesBaseName = "levelx"
 
 minecraft {
-    version = "1.7.2-10.12.1.1060"
+    version = "1.7.10-10.13.0.1160"
     assetDir = "assets"
 }
 

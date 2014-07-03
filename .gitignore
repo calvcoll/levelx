@@ -5,18 +5,14 @@
 /mcbuild/
 /assets
 
-*.old
-
 #idea stuff
 levelx.iml
 levelx.ipr
 levelx.iws
-
-#directory stuff
 CREDITS-fml.txt
 LICENSE-fml.txt
 MinecraftForge-Credits.txt
 MinecraftForge-License.txt
 README.txt
-*changelog.txt
+forge-1.7.2-10.12.1.1060-changelog.txt
 mc-build/

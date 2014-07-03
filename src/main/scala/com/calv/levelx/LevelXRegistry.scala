@@ -28,6 +28,7 @@ object LevelXRegistry {
 
   def register = {
     GameRegistry.registerBlock(toolAltar, toolAltar.blockName)
+    GameRegistry.registerTileEntity(classOf[TileEntityToolAltar], "toolaltarTileEntity")
     MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(this.toolAltar), new LevelXBlockToItemRenderer(new RendererToolAltar))
   }
 

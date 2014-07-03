@@ -3,10 +3,7 @@ package com.calv.levelx
 import cpw.mods.fml.common.{SidedProxy, FMLLog, Mod}
 import cpw.mods.fml.common.Mod.EventHandler
 import cpw.mods.fml.common.event.{FMLPostInitializationEvent, FMLPreInitializationEvent, FMLInitializationEvent}
-import net.minecraft.creativetab.CreativeTabs
-import net.minecraft.item.{ItemStack, Item}
-import com.calv.levelx.proxys.{ClientProxy, CommonProxy}
-import cpw.mods.fml.relauncher.{Side, SideOnly}
+import com.calv.levelx.proxys.CommonProxy
 
 /**
  * Created by Calv on 08/06/14.

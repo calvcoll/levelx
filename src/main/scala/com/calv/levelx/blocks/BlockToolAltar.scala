@@ -7,6 +7,7 @@ import cpw.mods.fml.common.registry.GameRegistry
 import net.minecraft.item.ItemStack
 import com.calv.levelx.tileentitys.TileEntityToolAltar
 import net.minecraft.world.{IBlockAccess, World}
+import com.calv.levelx.LevelX
 
 /**
  * Created by calv on 08/06/14.
@@ -26,6 +27,7 @@ class BlockToolAltar() extends LevelXBlockContainer(Material.rock, null){
     GameRegistry.addShapelessRecipe(new ItemStack(this),new ItemStack(Block.getBlockFromName("minecraft:stone")),
                                                         new ItemStack(Block.getBlockFromName("minecraft:coalore")))
     this.setBlockName(this.blockName)
+    this.setBlockTextureName(LevelX.modRegisterName + ":" + this.blockName)
   }
 
 }

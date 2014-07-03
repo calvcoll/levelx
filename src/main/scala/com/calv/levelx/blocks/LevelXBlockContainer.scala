@@ -18,5 +18,6 @@ abstract class LevelXBlockContainer (blockType :Material, creativeTab :CreativeT
   def register = {
     this.setCreativeTab(creativeTab)
     this.setBlockName(this.blockName)
+    this.setBlockTextureName(LevelX.modRegisterName + ":" + this.blockName)
   }
 }
